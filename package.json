@@ -44,7 +44,9 @@
     "test": "node bin/run-tests.js",
     "test:blueprints": "mocha node-tests/blueprints/**/*-test.js",
     "test:node": "qunit tests/node/**/*-test.js",
-    "test:browserstack": "node bin/run-browserstack-tests.js"
+    "test:browserstack": "node bin/run-browserstack-tests.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@babel/helper-module-imports": "^7.8.3",
@@ -71,7 +73,8 @@
     "jquery": "^3.5.1",
     "resolve": "^1.17.0",
     "semver": "^7.3.4",
-    "silent-error": "^1.1.1"
+    "silent-error": "^1.1.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.9.5",
@@ -155,5 +158,6 @@
   },
   "ember-addon": {
     "after": "ember-cli-legacy-blueprints"
-  }
+  },
+  "snyk": true
 }
