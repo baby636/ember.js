@@ -125,7 +125,7 @@
     "eslint-plugin-qunit": "^4.0.0",
     "execa": "^5.1.1",
     "expect-type": "^0.11.0",
-    "express": "^4.17.1",
+    "express": "^4.21.1",
     "finalhandler": "^1.1.2",
     "fs-extra": "^9.1.0",
     "git-repo-info": "^2.1.1",
